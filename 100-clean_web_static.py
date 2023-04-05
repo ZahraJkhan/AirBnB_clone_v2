@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A module for web application deployment with Fabric."""
-import os
+import os.path
 from datetime import datetime
 from fabric.api import env, local, put, run, runs_once
 
