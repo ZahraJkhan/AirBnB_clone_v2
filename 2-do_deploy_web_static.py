@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""A module for web application deployment with Fabric."""
-import os
+# Fabfile to distribute an archive to a web server.
+import os.path
 from datetime import datetime
-from fabric.api import env, local, put, run, runs_once
+from fabric.api import env
+from fabric.api import local
+from fabric.api import put
+from fabric.api import run
+from fabric.api import runs_once
 
 
 env.hosts = ["34.73.0.174", "35.196.78.105"]
