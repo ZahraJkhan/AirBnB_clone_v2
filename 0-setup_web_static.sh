@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installs, configures, and starts the web server
+# Installs and configures wbserver for deployment of webstatic
 SERVER_CONFIG="server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
@@ -35,8 +35,8 @@ HOME_PAGE="<!DOCTYPE html>
 "
 # shellcheck disable=SC2230
 if [[ "$(which nginx | grep -c nginx)" == '0' ]]; then
-    apt-get update
-    apt-get -y install nginx
+   sudo apt-get update
+    sudo apt-get -y install nginx
 fi
 mkdir -p /var/www/html /var/www/error
 chmod -R 755 /var/www
