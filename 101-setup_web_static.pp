@@ -47,6 +47,7 @@ file { '/data/web_static/releases/test/index.html':
 	</head>
 	<body>
 		<h1>Welcome to AirBnB!</h1>
+		<p>This is a one stop shop for you!</p>
 	<body>
 </html>
 ",
